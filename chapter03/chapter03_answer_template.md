@@ -526,19 +526,19 @@ AI가 직접 확인을 하지 못한체 있는 오류들을 나열해서
 
 # 12. 제출 체크리스트
 
-- [ ] `chapter03_answer.md`의 빈 필수 항목을 작성했다.
-- [ ] PostgreSQL과 DBeaver의 역할 차이를 설명했다.
-- [ ] `current_database/current_user/current_schema/search_path`를 실제로 확인했다.
-- [ ] `ai_database_book` 연결 여부를 SQL로 검증했다.
-- [ ] SQL 실행 범위 세 가지를 비교했다.
-- [ ] `setup_check.sql`을 실행했다.
-- [ ] `setup_validate_local.sql` 결과를 확인했다.
-- [ ] 오류 원인을 먼저 스스로 추정한 뒤 AI를 사용했다.
-- [ ] AI 제안을 실제 환경에서 검증했다.
-- [ ] 핵심 캡처 3~4장만 골라 넣었다.
-- [ ] 캡처에 비밀번호·개인정보·전체 접속 URL이 없다.
-- [ ] Markdown 이미지가 GitHub 웹 화면에서 실제로 보인다.
-- [ ] 최종 답안 파일을 commit/push했다.
+- [ v ] `chapter03_answer.md`의 빈 필수 항목을 작성했다.
+- [ v ] PostgreSQL과 DBeaver의 역할 차이를 설명했다.
+- [ v ] `current_database/current_user/current_schema/search_path`를 실제로 확인했다.
+- [ v ] `ai_database_book` 연결 여부를 SQL로 검증했다.
+- [ v ] SQL 실행 범위 세 가지를 비교했다.
+- [ v ] `setup_check.sql`을 실행했다.
+- [ v ] `setup_validate_local.sql` 결과를 확인했다.
+- [ v ] 오류 원인을 먼저 스스로 추정한 뒤 AI를 사용했다.
+- [ v ] AI 제안을 실제 환경에서 검증했다.
+- [ v ]  핵심 캡처 3~4장만 골라 넣었다.
+- [ v ] 캡처에 비밀번호·개인정보·전체 접속 URL이 없다.
+- [ v ] Markdown 이미지가 GitHub 웹 화면에서 실제로 보인다.
+- [ v ] 최종 답안 파일을 commit/push했다.
 
 ---
 
@@ -550,10 +550,10 @@ AI가 직접 확인을 하지 못한체 있는 오류들을 나열해서
 https://github.com/<본인-GitHub-ID>/<본인-저장소>/blob/main/assignments/chapter03/chapter03_answer.md
 ```
 
-내 제출 URL:
+내 제출 URL: https://github.com/jin-park0115/ai-database-book/tree/main/chapter03
 
 ```text
-
+https://github.com/jin-park0115/ai-database-book/tree/main/chapter03
 ```
 
 > 저장소 메인 URL, 교수자 템플릿 URL, Raw URL이 아니라 **작성 완료된 본인 `chapter03_answer.md` 파일 화면 URL**을 제출합니다.
