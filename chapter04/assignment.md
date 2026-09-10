@@ -5,8 +5,8 @@
 ## 0. 제출 정보
 - 이름: 박진
 - GitHub ID: jin-park0115
-- 작성일: 2026-09-09
-- 최종 제출 URL: 
+- 작성일: 2026-09-10
+- 최종 제출 URL: https://github.com/jin-park0115/ai-database-book/blob/main/chapter04/assignment.md
 
 ## 1. 질문과 필요한 데이터 선택
 ### 내가 확인하려는 질문
@@ -199,10 +199,10 @@ LLM 코드가 에러 없이 실행돼도, price(정가)와 unit_price*quantity(�
 - 2026-06~07 구간은 월 불완전 가능성이 커 시계열 해석에서 제외 검토가 필요하다.
 
 ## 최종 제출 체크
-- [ ] 핵심 셀 Output이 남아 있습니다.
-- [ ] merge와 총합 검증 Evidence가 있습니다.
-- [ ] 결과 관찰과 해석이 구분되어 있습니다.
-- [ ] LLM 코드를 검증했습니다.
-- [ ] 개인정보/Secret이 없습니다.
-- [ ] `chapter04/chapter04.ipynb`가 GitHub에서 정상 표시됩니다.
-- [ ] 최종 Notebook 파일 URL을 제출합니다.
+- [ v ] 핵심 셀 Output이 남아 있습니다.
+- [ v ] merge와 총합 검증 Evidence가 있습니다.
+- [ v ] 결과 관찰과 해석이 구분되어 있습니다.
+- [ v ] LLM 코드를 검증했습니다.
+- [ v ] 개인정보/Secret이 없습니다.
+- [ v ] `chapter04/chapter04.ipynb`가 GitHub에서 정상 표시됩니다.
+- [ v ] 최종 Notebook 파일 URL을 제출합니다.
