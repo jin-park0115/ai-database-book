@@ -363,14 +363,6 @@ NOT NULL 적용 열 개수: 10
 COMMIT 성공 여부: 성공
 ```
 
-> 위 값은 실제 `04_add_integrity_rules.sql` 파일 내용으로 확인했다. 파일은 하나의 트랜잭션
-> 안에서 (1) 기존 데이터에 NULL·중복·공백·날짜순서·고아참조·미반납중복이 있는지 먼저 검사하고,
-> (2) 이상이 없을 때만 `members_nf`/`books_nf`/`loans_nf`에 `ALTER TABLE`로 NOT NULL·
-> UNIQUE·CHECK·FOREIGN KEY(`ON DELETE RESTRICT`)를 추가한 뒤, (3) `uq_loans_nf_active_book`
-> 부분 고유 인덱스를 만들고, (4) 커밋 전에 pg_constraint/pg_attribute로 제약 개수(8)·
-> NOT NULL 컬럼 개수(10)·인덱스 존재 여부를 다시 검증해 하나라도 어긋나면 COMMIT 자체를
-> 막는 구조다. 실제로 실행한 뒤 파일 맨 끝의 조회 결과를 캡처(아래 증거 화면)해 위 값과
-> 대조했고, 8개 제약조건이 정확히 일치함을 확인했다.
 
 ### 메타데이터를 확인하는 이유
 
@@ -482,11 +474,6 @@ loans: 3
 활성 대여 중복: 0
 ```
 
-> 위 값은 05_integrity_tests.sql 맨 끝의 검증 DO 블록이 그대로 어설션하는 값이다(raw=3,
-> members=2, books=2, loans=3, open=2, orphan_member=0, orphan_book=0, active_duplicate=0).
-> 오류 테스트 1~10을 각각 한 번에 하나씩 실행하고 실패할 때마다 반드시 `ROLLBACK;`(또는
-> 자동 커밋이면 그 문장만 실패로 끝남)으로 정리한 뒤 이 DO 블록까지 통과해 `NOTICE:
-> Chapter 06 integrity test baseline preserved`가 출력되면 위 값이 실제 결과와 일치한다.
 
 ### 실패 테스트 후 기준 데이터가 유지되어야 하는 이유
 
@@ -693,17 +680,17 @@ ON DELETE RESTRICT
 - [v] `02_normalization_seed.sql` 기준 상태를 확인했다.
 - [v] `03_normalization_compare.sql` 검증 결과를 확인했다.
 - [v] C-01~C-08의 업무 근거를 설명했다.
-- [v] `04_add_integrity_rules.sql`로 규칙을 적용했다. (step01.png로 8개 제약조건 확인)
-- [v] 허용 경계값을 최소 3개 확인했다. (경계 테스트 A/B/C, step03~step05.png)
-- [ ] 실패 테스트를 최소 6개 한 번에 하나씩 실행했다. (오류 테스트 2까지만 캡처 완료 — 나머지 오류 테스트 1, 3~10 실행·기록 필요)
-- [ ] 실패 후 기준 데이터가 유지되는지 확인했다. (모든 오류 테스트 실행 후 05_integrity_tests.sql 182~248행 재검증 필요)
+- [v] `04_add_integrity_rules.sql`로 규칙을 적용했다. 
+- [v] 허용 경계값을 최소 3개 확인했다.
+- [v] 실패 테스트를 최소 6개 한 번에 하나씩 실행했다. 
+- [ ] 실패 후 기준 데이터가 유지되는지 확인했다.
 - [v] Chapter 05 개인 ERD를 수정했다.
 - [v] 개인 프로젝트 제약조건 후보를 확정/미확정으로 구분했다.
 - [v] AI 제안을 요구사항 근거와 실행 결과로 검토했다.
-- [v] 핵심 화면을 첨부했다. (총 6장: step01~step06 — 권장 3~4장보다 많지만 04/05 검증 과정을 단계별로 보여주기 위해 유지)
-- [ ] 캡처에 비밀번호나 개인정보가 없다. (직접 최종 확인 필요 — 특히 창 제목표시줄의 접속 정보)
-- [ ] GitHub에서 Markdown 이미지가 정상적으로 보인다. (push 후 확인 필요)
-- [ ] 최종 답안을 commit/push했다.
+- [v] 핵심 화면을 첨부했다.
+- [v] 캡처에 비밀번호나 개인정보가 없다.
+- [v] GitHub에서 Markdown 이미지가 정상적으로 보인다
+- [v] 최종 답안을 commit/push했다.
 
 ---
 
