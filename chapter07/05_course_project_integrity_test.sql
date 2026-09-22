@@ -91,8 +91,8 @@ $$;
 -- VALUES (1900,NULL,'null-name@example.com',DATE '2026-03-20');
 
 -- 오류 1. 학생 이메일 중복 → uq_course_students_email
--- INSERT INTO course_project.students (id,name,email,joined_at)
--- VALUES (1901,'중복 학생','minji@example.com','2026-03-20');
+ INSERT INTO course_project.students (id,name,email,joined_at)
+ VALUES (1901,'중복 학생','minji@example.com','2026-03-20');
 
 -- 오류 2. 강사 이메일 중복 → uq_course_instructors_email
 -- INSERT INTO course_project.instructors (id,name,email,specialty)

@@ -215,3 +215,16 @@ SELECT
     to_regclass('course_project.courses') AS courses_table,
     to_regclass('course_project.enrollments') AS enrollments_table,
     to_regclass('course_project.uq_course_enrollments_active') AS active_index;
+
+
+
+
+
+
+select *
+from course_project.students;
+
+
+
+
+

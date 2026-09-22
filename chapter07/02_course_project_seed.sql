@@ -223,3 +223,9 @@ UNION ALL
 SELECT 'enrollments', COUNT(*)
 FROM course_project.enrollments
 ORDER BY object_name;
+
+
+SELECT id, student_id, course_id, status, recorded_amount
+FROM course_project.enrollments
+WHERE id IN (1001, 1004, 1005)
+ORDER BY id;
