@@ -848,24 +848,24 @@ Chapter 09의 03·05번 실습에서 본 것처럼, 조건부 UPDATE·INSERT는 
 
 # 15. 제출 체크리스트
 
-- [ ] `chapter09_answer.md`를 본인 저장소에 만들었다.
-- [ ] Chapter 07·08 기준 상태를 확인했다.
-- [ ] `transaction_lab` 스키마와 초기 데이터를 만들었다.
-- [ ] 정상 COMMIT의 전·중·후 상태를 기록했다.
-- [ ] ROLLBACK 후 부분 변경이 남지 않는지 확인했다.
-- [ ] ROLLBACK과 IDENTITY 번호의 차이를 설명했다.
-- [ ] 좌석 부족 시 영향 행 수 0을 관찰했다.
-- [ ] 영향 행 수 0일 때 후속 행이 생성되지 않음을 확인했다.
-- [ ] `06_transaction_validation.sql` 최종 검증을 통과했다.
-- [ ] `course_project`가 변경되지 않았음을 확인했다.
-- [ ] ACID를 이번 실습 사례로 설명했다.
-- [ ] Lock 실습 또는 두 세션 절차 분석을 수행했다.
-- [ ] 개인 프로젝트 트랜잭션 시나리오를 작성했다.
-- [ ] AI 제안의 COMMIT/ROLLBACK/영향 행 수 검증을 확인했다.
-- [ ] 핵심 캡처는 3~4장 정도로 정리했다.
-- [ ] 캡처에 비밀번호·개인정보가 없다.
-- [ ] GitHub 웹에서 Markdown과 이미지가 정상적으로 보인다.
-- [ ] 최종 파일을 commit/push했다.
+- [v] `chapter09_answer.md`를 본인 저장소에 만들었다.
+- [v] Chapter 07·08 기준 상태를 확인했다.
+- [v] `transaction_lab` 스키마와 초기 데이터를 만들었다.
+- [v] 정상 COMMIT의 전·중·후 상태를 기록했다.
+- [v] ROLLBACK 후 부분 변경이 남지 않는지 확인했다.
+- [v] ROLLBACK과 IDENTITY 번호의 차이를 설명했다.
+- [v] 좌석 부족 시 영향 행 수 0을 관찰했다.
+- [v] 영향 행 수 0일 때 후속 행이 생성되지 않음을 확인했다.
+- [v] `06_transaction_validation.sql` 최종 검증을 통과했다.
+- [v] `course_project`가 변경되지 않았음을 확인했다.
+- [v] ACID를 이번 실습 사례로 설명했다.
+- [v] Lock 실습 또는 두 세션 절차 분석을 수행했다.
+- [v] 개인 프로젝트 트랜잭션 시나리오를 작성했다.
+- [v] AI 제안의 COMMIT/ROLLBACK/영향 행 수 검증을 확인했다.
+- [v] 핵심 캡처는 3~4장 정도로 정리했다.
+- [v] 캡처에 비밀번호·개인정보가 없다.
+- [v] GitHub 웹에서 Markdown과 이미지가 정상적으로 보인다.
+- [v] 최종 파일을 commit/push했다.
 
 ---
 
@@ -880,7 +880,7 @@ https://github.com/<본인-GitHub-ID>/<본인-저장소>/blob/main/assignments/c
 내 제출 URL:
 
 ```text
-
+https://github.com/jin-park0115/ai-database-book/blob/main/chapter09/answer.md
 ```
 
 > 교수자 템플릿 URL, 저장소 메인 URL, Raw URL이 아니라 **작성 완료된 본인의 `chapter09_answer.md` 파일 화면 URL**을 제출합니다.
