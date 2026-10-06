@@ -594,9 +594,6 @@ Chapter 07부터 발전시킨 개인 프로젝트를 사용합니다.
 
 개인 프로젝트: Chapter 07부터 설계한 좌석 예약 서비스 (members / seats / staff / reservations)
 
-> ※ 로그인 세션, 시간대별 남은 좌석 현황, 좌석 부가 속성, 입장·퇴장 기록은 현재 Chapter 07 설계에는 없고,
-> 서비스를 확장할 때 생길 데이터로 가정해 역할과 저장소 후보를 분류했다.
-
 | 데이터 | 시스템 역할 | Source of Truth? | 대표 조회/쓰기 | 트랜잭션 필요? | 재구축 가능? | 저장소 후보 |
 | --- | --- | --- | --- | --- | --- | --- |
 | 좌석 예약 (`reservations`, 예약금 스냅샷 포함) | Source of Truth | O | 좌석·시간대 이중예약 확인 후 INSERT, 회원별 예약 목록 조회 | O (좌석 잠금 + INSERT 원자성) | X | PostgreSQL RDBMS |
